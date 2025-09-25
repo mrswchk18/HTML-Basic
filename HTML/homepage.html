@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+    <style>
+        body{margin: 0;font-family: Arial, Helvetica, sans-serif;background: rgb(244, 244, 244);color: rgb(40, 39, 39);}
+
+        header{background: rgb(169, 97, 169);padding: 15px 20px;display: flex;justify-content: space-between;align-items: center;color: white;}
+        header h1{margin: 0;font-size: 20px;}
+        nav a{color: white;text-decoration: none;font-size: 14px;margin-left: 14px;}
+        nav a:hover{text-decoration: underline;}
+
+        .hero{text-align: center;padding: 80px 20px;background: white;}
+        .hero h2{margin-bottom: 10px;font-size: 28px;color: rgb(166, 97, 230);}
+        .hero p{color: rgb(31, 31, 31);margin: 0 auto 20px;}
+        .btn{display: inline-block;padding: 20px 10px;background: gray;color: white;border-radius: 6px;text-decoration: none;font-weight: bold;}
+        .btn:hover{background: rgb(69, 69, 69);}
+
+        .features{display: grid;grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));gap: 20px;padding: 40px 20px;max-width: 1000px;margin: auto;}
+        .feature{background: white;padding: 20px;border-radius: 6px;box-shadow: 0 2px 6px rgb(28, 28, 28);text-align: center;}
+        .feature h3{margin-bottom: 10px; color: rgb(58, 58, 58);}
+
+        footer{text-align: center;padding: 20px;background: rgb(169, 97, 169);color: white;font-size: 14px;}
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Homepage</h1>
+        <nav>
+            <a href="">Beranda</a>
+            <a href="">Profile</a>
+            <a href="">Pengaturan</a>
+            <a href="">Tentang</a>
+        </nav>
+    </header>
+    <section class="hero">
+        <h2>Selamat Datang</h2>
+        <p>Web ini dibuat dengan menggunakan HTML 5 dengan style menggunakan CSS</p>
+        <a href="" class="btn">Mulai Sekarang</a>
+    </section>
+    <section class="features">
+        <div class="feature">
+            <h3>Kotak 1</h3>
+            <p>Ini adalah kotak 1</p>
+        </div>
+        <div class="feature">
+            <h3>Kotak 2</h3>
+            <p>Ini adalah kotak 2</p>
+        </div>
+        <div class="feature">
+            <h3>Kotak 3</h3>
+            <p>Ini adalah kotak 3</p>
+        </div>
+        <div class="feature">
+            <h3>Kotak 4</h3>
+            <p>Ini adalah kotak 4</p>
+        </div>
+        <div class="feature">
+            <h3>Kotak 5</h3>
+            <p>Ini adalah kotak 5</p>
+        </div>
+    </section>
+    <footer>
+        <span id="year"></span>@Copyright dilindungi
+    </footer>
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>

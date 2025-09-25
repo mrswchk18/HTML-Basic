@@ -1,0 +1,60 @@
+<html>
+    <head>
+        <title>Register</title>
+        <style>
+             nav{display: flex;justify-content: space-between;align-items: center;padding: 10px 20px;background-color: #fdffb6;}
+            .logo{display: flex;align-items: center;gap: 10px;font-size: 20px;font-weight: bold;}
+            .menu a{text-decoration: none;margin: 0 10px;font-size: 18px;color: #ffadad;}
+            .logo img{width: 80px;height: 40px;}
+            .box-1{background-color: white;
+                font-family: Arial, Helvetica, sans-serif;
+                display: flex;justify-content: center;align-items: center;margin-top: 20px;}
+            .register-box{background-color: white;padding: 20px;border-radius: 8px;width: 360px;
+                box-shadow: 0 4px 8px black;}
+            .register-box h2{text-align: center;}
+            .register-box label{display: block;font-size: 14px;margin-bottom: 5px;}
+            .register-box input{width: 100%;padding: 10px;border: 1px solid black;
+                border-radius: 5px;margin-bottom: 15px;font-size: 14px;}
+            .register-box button{width: 100%;padding: 10px;background-color: blue;color: white;
+                cursor: pointer;border: none;border-radius: 5px;font-size: 14;}
+            .register-box button:hover{background-color: rgb(76, 76, 242)}
+            .register-box p{font-size: 14px; margin-top: 15px;text-align: center;}
+            .register-box a{text-decoration: none;color: rgb(41, 133, 238)}
+        </style>
+    </head>
+    <body>
+        <nav>
+            <div class="logo">
+                <img src="../Image/idext.png" alt="Logo">
+                <span>My Website</span>
+            </div>
+            <div class="menu">
+                <a href="website.html">Home</a>
+                <a href="Resto.html">Resto</a>
+                <a href="form.html">Form</a>
+                <a href="register.html">Registrasi</a>
+                <a href="login.html">Login</a>
+            </div>
+        </nav>
+        <div class="box-1">
+            <div class="register-box">
+            <h2>Daftar</h2>
+            <label for="Nama Lengkap">Nama Lengkap:</label>
+            <input type="text" id="Nama Lengkap" placeholder="Masukan Nama" required>
+
+            <label for="E-mail">E-mail:</label>
+            <input type="email" id="E-mail" placeholder="Masukan E-mail"required>
+
+            <label for="Password">Password:</label>
+            <input type="password" id="Password" placeholder="Masukan Password" required>
+
+            <label for="KonfirmasiPassword">Konfirmasi Password:</label>
+            <input type="password" id="KonfirmasiPassword" placeholder="Konfirmasi password" required>
+
+            <button type="submit">Daftar</button>
+
+            <p>Sudah punya akun? <a href="login.html">Login</a></p>
+            </div>
+        </div>
+    </body>
+</html>

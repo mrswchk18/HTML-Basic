@@ -1,0 +1,43 @@
+<html>
+    <head>
+        <title>Navigation and Div</title>
+        <style>
+            nav{display: flex;justify-content: space-between;align-items: center; background-color: antiquewhite;padding: 10px 20px;}
+            .logo{display: flex;align-items: center;gap: 10px;font-size: 20px;font-weight: bold;}
+            .menu a{color: black;text-decoration: none;margin: 0 10px;font-size: 18px;}
+            .menu a:hover{color: aqua;}
+            img{width: 80PX;height: 40px;}
+            .vertical{text-align: center;padding: 15px; margin: 10px;}
+            .div1{background-color: blueviolet;}
+            .div2{background-color: aqua;}
+            .horizontal{display: flex;margin: 10px;gap: 10px;}
+            .box{flex: 1;padding: 20px;text-align: center;background-color: aquamarine;border: 1px solid black;}
+        </style>
+    </head>
+    <body>
+        <nav>
+            <div class="logo">
+                <img src="../Image/idext.png" alt="logo">
+                <span>My Website</span>
+            </div>
+            <div class="menu">
+                <a href="form.html">Form</a>
+                <a href="css.html">CSS</a>
+                <a href="profile.html">Profile</a>
+            </div>
+        </nav>
+        <div class="vertical div1">
+            <h2>DIV 1</h2>
+            <p>Contoh contoh div 1</p>
+        </div>
+        <div class="vertical div2">
+            <h2>DIV 2</h2>
+            <p>Contoh contoh div 2</p>
+        </div>
+        <div class="horizontal">
+            <div class="box">BOX 1</div>
+            <div class="box">BOX 2</div>
+            <div class="box">BOX 3</div>
+        </div>
+    </body>
+</html>
